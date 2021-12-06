@@ -1,0 +1,50 @@
+@import '../../scss/breakpoints';
+@import '../../scss/vars';
+
+.listWrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 452px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 870px;
+  }
+
+  .listItem {
+    height: 170px;
+    background-color: $primaryWhiteColor;
+    border-radius: 6px;
+    box-shadow: $primaryShadow;
+    width: 270px;
+    height: 224px;
+    border: 1px solid white;
+    transition: .2s;
+
+    &:nth-child(1n):hover {
+      border: 1px solid #8B75DA;
+    }
+
+    &:nth-child(2n):hover {
+      border: 1px solid #FF7464;
+    }
+
+    &:nth-child(3n):hover {
+      border: 1px solid #FFA762;
+    }
+
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+  }
+}

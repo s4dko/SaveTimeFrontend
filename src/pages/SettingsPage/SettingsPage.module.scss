@@ -1,0 +1,52 @@
+@import '../../scss/vars';
+@import '../../scss/breakpoints';
+
+.SettingsHeader {
+  padding: 40px 0 0px 0;
+  //&:last-child{
+  //  padding-top: 40px;
+  //}
+}
+
+.SettingsTitle{
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.block{
+  padding: 15px;
+}
+
+.blockTitle{
+  margin-left: 10px;
+}
+
+//.blockSwitch{
+//  float:right
+//}
+
+.blockDescription{
+  font-size: 12px;
+  color: gray;
+  margin-left: 10px;
+  margin-top: 5px;
+  height: 72px;
+  overflow: hidden;
+}
+
+.blockSwitch{
+  margin-top: 35px;
+}
+
+.blockOpen{
+  color: #008cff;
+  text-decoration: underline;
+  font-size: 13px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.btnOpen{
+  cursor: pointer;
+}
