@@ -2,7 +2,7 @@
 @import '../../scss/breakpoints';
 
 .buttonWrapper{
-  margin-top: 125px;
+  margin-top: 10px;
 }
 
 .iconButton{
@@ -66,6 +66,7 @@
   margin-bottom: 6px;
   overflow: hidden;
   cursor: pointer;
+  height: 63px;
 
   @media screen and (min-width: $tablet) {
     max-height: 90px;
@@ -87,6 +88,7 @@
   line-height: 1.2;
   color: $text-white;
   overflow: hidden;
+  height: 103px;
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
